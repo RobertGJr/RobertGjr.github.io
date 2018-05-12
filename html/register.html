@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+    <form>
+      First Name: <input type="text" name="firstname" value=""><br>
+      Last Name: <input type="text" name="lastname" value=""><br>
+      Birthday: <input type="date" name="bday" value=""><br>
+      Gender:<br>
+      <input type="radio" name="gender" value="male">Male<br>
+      <input type="radio" name="gender" value="female">Female<br>
+      <input type="radio" name="gender" value="other">Other<br>
+      Pets:<br>
+      <input type="checkbox" name="cat" value="">Cat<br>
+      <input type="checkbox" name="dog" value="">Dog<br>
+      Cars:<br>
+      <select name="cars">
+        <option value="Volvo" name="volvo">Volvo</option>
+        <option value="audi" name="audi">Audi</option>
+      </select><br>
+      Email: <input type="email" name="email" value="" required><br>
+      Password: <input type="password" name="password" value="" min="5"><br>
+      <input type="submit" name="submit" value="Register!"><!--value defines the text inside the input-->
+      <input type="reset" name="" value="Reset">
+    </form>
+  </body>
+</html>
