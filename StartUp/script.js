@@ -1,3 +1,5 @@
+var today = getElementById('day');
+var day;
 switch (new Date().getDay()) {
     case 0:
         day = "Sunday";
@@ -20,3 +22,4 @@ switch (new Date().getDay()) {
     case 6:
         day = "Saturday";
 }
+today.textContent = "today is" + day;
