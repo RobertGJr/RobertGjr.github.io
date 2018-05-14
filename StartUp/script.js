@@ -1,4 +1,4 @@
-var today = getElementById('day');
+var today = document.getElementById('day');
 var day;
 switch (new Date().getDay()) {
     case 0:
