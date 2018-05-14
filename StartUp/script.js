@@ -49,9 +49,15 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
 } else {
     study.textContent = "Sir, there are no classes today."
 }
-setInterval(ajax(), 30000); //2 Seconds 
+setInterval(ajax(), 30000); 
+
 function ajax() {
-if(todayMin === min.getMinutes) {
-    todayMin.textContent = min.getMinutes();
-}
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+      todayMin.textContent = this.responseText;
+    }
+  };
+  xhr.open("GET", "clock.js" + min.getMinutes(), true);
+  xhr.send();
 }
