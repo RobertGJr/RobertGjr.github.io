@@ -30,7 +30,7 @@ switch (new Date().getDay()) {
 }
 
 
-today.textContent = "today is" + " " + day;
+today.textContent = "Today is" + " " + day;
 todayHour.textContent = hour.getHours() + ":";
  todayMin.textContent = min.getMinutes();
 
