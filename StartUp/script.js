@@ -28,21 +28,11 @@ switch (new Date().getDay()) {
     case 6:
         day = "Saturday";
 }
-setInterval(ajax(), 60000); //2 Seconds 
-function ajax(){
-var xar = new XMLHttpRequest();
-    xar.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200){
-        todayMin.textContent = min.getMinutes();
-        }
-    } xar.open("GET", todaymin, true);
-    xar.send();
-}
 
 
-
-today.textContent = "today is" + day;
+today.textContent = "today is" + " " + day;
 todayHour.textContent = hour.getHours() + ":";
+ todayMin.textContent = min.getMinutes();
 
 if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
     if (hour > 12 && min  > 59) {
@@ -58,4 +48,10 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
     }
 } else {
     study.textContent = "Sir, there are no classes today."
+}
+setInterval(ajax(), 30000); //2 Seconds 
+function ajax() {
+if(todayMin === min.getMinutes) {
+    todayMin.textContent = min.getMinutes();
+}
 }
