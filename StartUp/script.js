@@ -33,13 +33,13 @@ todayHour.textContent = hour.getHours() + ":";
 todayMin.textContent = min.getMinutes();
 if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
     if (hour > 12 && min  > 59) {
-        study.textContent = "Sir, Classes start at 13:00 pm, try no to be late."
+        study.textContent = "Sir, Classes start at 13:00 pm. Try no to be late."
     } else {
         study.textContent = "...";
     }
 } else if (day === "Friday") {
     if (hour > 11 && min > 59) {
-    study.textContent = "Sir, Classes start at 12:00 pm, try no to be late."
+    study.textContent = "Sir, Classes start at 12:00 pm. Try no to be late."
     } else {
     study.textContent = "...";
     }
