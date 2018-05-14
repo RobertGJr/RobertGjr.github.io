@@ -38,6 +38,9 @@ header.startup hr {
 .btn-dark {
   transition: all 2s ease-in-out;
 }
+.my-auto {
+  backgroun-color: rgba(89, 89, 89, 0.6);
+}
 .input-group-prepend {
   border-radius: 35px;
   background-color: rgba(87, 86, 86, 0.5);
