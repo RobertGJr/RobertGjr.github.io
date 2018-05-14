@@ -32,7 +32,7 @@ switch (new Date().getDay()) {
 
 today.textContent = "Today is" + " " + day;
 todayHour.textContent = hour.getHours() + ":";
- todayMin.textContent = min.getMinutes();
+
 
 if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
     if (hour > 12 && min  > 59) {
@@ -49,15 +49,8 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
 } else {
     study.textContent = "Sir, there are no classes today."
 }
-setInterval(ajax(), 30000); 
+    setInterval(changeTime(), 3000);
 
-function ajax() {
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-      todayMin.textContent = this.responseText;
-    }
-  };
-  xhr.open("GET", "clock.js" + min.getMinutes(), true);
-  xhr.send();
+function changeTime(){
+ todayMin.textContent = min.getMinutes();
 }
