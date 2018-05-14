@@ -46,5 +46,5 @@ header.startup hr {
   background-color: rgba(9, 75, 226, 0.5);
 }
 .nobr {
-white-space: nowrap;
+  display: inline-flex;
 }
