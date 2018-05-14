@@ -14,7 +14,7 @@ header.startup h1 {
   font-size: 2rem;
   margin-top: 20px;
   color: rgba(56, 58, 69, 0.5);
-  transition: all 2s ease-in-out
+  transition: all 2s ease-in-out;
   font-family: 'Montserrat', sans-serif;
 }
 header.startup h1:hover {
@@ -53,4 +53,5 @@ header.startup hr {
 }
 .well {
 background-color: rgba(89, 89, 89, 0.5);
+  font-family:'Montserrat', sans-serif;
 }
