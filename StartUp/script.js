@@ -1,4 +1,9 @@
 var today = document.getElementById('day');
+var todayMin = document.getElementById('minutes');
+var todayHour = document.getElementById('hours');
+
+var hour = new Date();
+var min = new Date();
 var day;
 switch (new Date().getDay()) {
     case 0:
@@ -23,3 +28,5 @@ switch (new Date().getDay()) {
         day = "Saturday";
 }
 today.textContent = "today is" + day;
+todayHour.textContent = hour.getHours() + ":";
+todayMin.textContent = min.getMinutes();
