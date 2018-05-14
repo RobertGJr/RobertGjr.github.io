@@ -38,6 +38,10 @@ header.startup hr {
 .btn-dark {
   transition: all 2s ease-in-out;
 }
+.input-group-prepend {
+  border-radius: 35px;
+  background-color: rgba(87, 86, 86, 0.5);
+}
 .btn-dark:hover {
   background-color: rgba(9, 75, 226, 0.5);
 }
