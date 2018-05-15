@@ -49,8 +49,6 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
 } else {
     study.textContent = "Sir, there are no classes today."
 }
-    setInterval(changeTime(), 3000);
+    
 
-function changeTime(){
  todayMin.textContent = min.getMinutes();
-}
