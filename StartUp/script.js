@@ -1,11 +1,5 @@
 const today2 = document.getElementById('day');
 const study = document.getElementById('study');
-const today = new Date();
-const h = today.getHours();
-const m = today.getMinutes();
-const s = today.getSeconds();
-const clock = getElementById('time');
-
 var day;
 
 switch (new Date().getDay()) {
@@ -33,13 +27,22 @@ switch (new Date().getDay()) {
 
 
 today2.textContent = `Today is ${day} `;
+const tictac = () => {
+const today = new Date();
+const h = today.getHours();
+const m = today.getMinutes();
+const s = today.getSeconds();
+const clock = getElementById('time');
 m = checkTime(m);
 s = checkTime(s);
+clock.innerHTML = h + ':' + m + ':' + s;
 
-const checkTime = (i) => {
-    if (i < 10) {i = '0' + i};
-        return i;
+const t = () => {
+    setTimeout(tictac, 500);
 }
+
+}
+
 
 
 if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
@@ -58,4 +61,4 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
     study.textContent = "Sir, there are no classes today."
 }
 
-clock.innerHTML = h + ':' + m + ':' + s;
+
