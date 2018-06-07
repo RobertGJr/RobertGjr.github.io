@@ -63,12 +63,16 @@ h2 {
 #particles-js {
   width: 200px;
   height: 200px;
-  margin-left: 50px;
+  margin-left: 192px;
 }
 @media only screen and (min-width: 1000px) {
   #particles-js {
   width: 200px;
   height: 200px;
-  margin-left: 455px;
+  margin-left: 290px;
 }
+}
+.card {
+  text-align: center;
+  border: 1px solid transparent;
 }
