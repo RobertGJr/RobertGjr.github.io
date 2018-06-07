@@ -29,36 +29,18 @@ switch (new Date().getDay()) {
 today2.textContent = `Today is ${day} `;
 const tictac = () => {
 const today = new Date();
-const h = today.getHours();
-const m = today.getMinutes();
-const s = today.getSeconds();
+let h = today.getHours();
+let m = today.getMinutes();
+let s = today.getSeconds();
 const clock = document.getElementById('time');
-m = checkTime(m);
-s = checkTime(s);
+
 clock.innerHTML = h + ':' + m + ':' + s;
 
-const t = () => {
-    setTimeout(tictac, 500);
-}
-
-}
-
-
+const t = setTimeout(tictac, 500);
 
 if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
     if (h < 12 && m  < 59) {
         study.textContent = "Sir, Classes start at 13:00 pm. Try no to be late."
-    } else {
-        study.textContent = "...";
-    }
-} else if (day === "Friday") {
-    if (h < 11 && m < 59) {
-    study.textContent = "Sir, Classes start at 12:00 pm. Try no to be late."
-    } else {
-    study.textContent = "...";
-    }
-} else {
-    study.textContent = "Sir, there are no classes today."
 }
 
 
