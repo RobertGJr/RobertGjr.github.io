@@ -34,7 +34,7 @@ switch (new Date().getDay()) {
 }
 
 
-today.textContent = `Today is ${day} `;
+today2.textContent = `Today is ${day} `;
 m = checkTime(m);
 s = checkTime(s);
 
