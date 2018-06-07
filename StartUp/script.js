@@ -1,6 +1,7 @@
 const today2 = document.getElementById('day');
 const study = document.getElementById('study');
 var day;
+const welcome = document.getElementById('welcome');
 
 switch (new Date().getDay()) {
     case 0:

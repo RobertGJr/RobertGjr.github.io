@@ -31,7 +31,7 @@ header.startup h1:hover {
 hr {
   max-width: 65px;
   border-width: 3px;
-  border-color: rgba(9, 75, 226, 0.1);;
+  border-color: none;
 }
 header.startup hr {
   margin-top: 200px;
@@ -40,9 +40,7 @@ header.startup hr {
 .btn-dark {
   transition: all 2s ease-in-out;
 }
-.my-auto {
-  backgroun-color: rgba(89, 89, 89, 0.6);
-}
+
 .input-group-prepend {
   border-radius: 35px;
   background-color: rgba(87, 86, 86, 0.5);
@@ -56,6 +54,11 @@ header.startup hr {
 .well {
 background-color: rgba(89, 89, 89, 0.5);
   font-family:'Montserrat', sans-serif;
+}
+
+h2 {
+  color: rgba(33, 35, 36, 0.5);
+   font-size: 20px;
 }
 #particles-js {
   width: 200px;
