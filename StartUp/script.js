@@ -6,10 +6,9 @@ const today = new Date();
 const h = today.getHours();
 const m = today.getMinutes();
 const s = today.getSeconds();
-const day;
 const clock = getElementById('time');
 
-
+var day;
 
 switch (new Date().getDay()) {
     case 0:
