@@ -1,14 +1,16 @@
 body,
 html  {
+  
   width: 100%;
   height: 100%;
 }
 header.startup {
 
-  background-image: url(https://cdn.dribbble.com/users/543872/screenshots/3440651/untitled-6.gif);
-  background-size: cover;
+ background-color: #060606;
   height: 100%;
+  background-size: cover;
   background-position: center;
+
 }
 header.startup h1 {
   font-size: 2rem;
@@ -54,4 +56,16 @@ header.startup hr {
 .well {
 background-color: rgba(89, 89, 89, 0.5);
   font-family:'Montserrat', sans-serif;
+}
+#particles-js {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+@media only screen and (min-width: 1000px) {
+  #particles-js {
+  width: 200px;
+  height: 200px;
+  margin-left: 455px;
+}
 }

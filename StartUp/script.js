@@ -38,9 +38,6 @@ clock.innerHTML = h + ':' + m + ':' + s;
 
 const t = setTimeout(tictac, 500);
 
-if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thursday") {
-    if (h < 12 && m  < 59) {
-        study.textContent = "Sir, Classes start at 13:00 pm. Try no to be late."
 }
 
 
