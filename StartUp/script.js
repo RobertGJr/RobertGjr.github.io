@@ -1,6 +1,4 @@
 const today2 = document.getElementById('day');
-const todayMin = document.getElementById('minutes');
-const todayHour = document.getElementById('hours');
 const study = document.getElementById('study');
 const today = new Date();
 const h = today.getHours();
@@ -60,4 +58,4 @@ if (day === "Monday" || day === "Tuesday" || day === "Wednesday" || day === "Thu
     study.textContent = "Sir, there are no classes today."
 }
 
-clock.innerHTML = `${h}:${m}:${s}`;
+clock.innerHTML = h + ':' + m + ':' + s;
